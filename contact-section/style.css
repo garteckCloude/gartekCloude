@@ -530,11 +530,21 @@ textarea {
   .header .nav-item a {
     padding: 12px 18px;
   }
+
+  .icon-container {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (min-width: 1440px) {
   .header-form {
     display: flex;
+  }
+
+  .icon-container {
+    width: 35px;
+    height: 35px;
   }
 }
 
