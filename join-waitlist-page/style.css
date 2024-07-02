@@ -266,6 +266,82 @@ a {
   gap: 12px;
 }
 
+/* MAIN SECTION STYLES */
+
+.main {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.join-waitlist-section-title {
+  background-color: #fff2db;
+  color: var(--gold);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 2.4rem;
+}
+
+.join-waitlist-section p {
+  color: #a1a4a0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.join-waitlist-section {
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.join-waitlist-form {
+  align-items: center;
+  gap: 18px;
+  background-color: var(--white);
+  padding: 18px 8px;
+  border-radius: 8px;
+}
+
+.email-container {
+  flex: 1;
+}
+
+.form-row input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+.form-row input:focus,
+.form-row input:active {
+  outline: 2px solid var(--gold);
+}
+
+.submit-join-waitlist-form-btn {
+  cursor: pointer;
+  background-color: var(--gold);
+  color: var(--white);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding: 12px 24px;
+}
+
+.generic-container {
+  align-self: flex-end;
+}
+
+/* MAIN SECTION STYLES END */
+
 /* Utility Classes */
 .hidden {
   display: none;
