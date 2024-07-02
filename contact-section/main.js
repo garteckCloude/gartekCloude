@@ -37,3 +37,30 @@ messageFormEmailAddress.addEventListener('input', (e) => {
 
   messageFormEmailAddress.reportValidity();
 });
+
+// Handling form submission
+messageForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const firstName = messageForm.elements['first-name'];
+
+  if (firstName.value.trim() === '') {
+    firstName.setCustomValidity('Please input your first name');
+    firstName.reportValidity();
+    return;
+  }
+
+  const emailAddress = messageForm.elements['email-address'];
+
+  if (
+    emailAddress.value.trim() === '' ||
+    !emailRegExp.test(emailAddress.value)
+  ) {
+    emailAddress.setCustomValidity('Please input a valid email address');
+    emailAddress.reportValidity();
+    return;
+  }
+
+  // Perform action in the backend with the form values
+  alert('form submitted');
+});
