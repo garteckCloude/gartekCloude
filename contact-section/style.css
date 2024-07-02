@@ -11,3 +11,10 @@ html {
   font-size: 10px;
   box-sizing: inherit;
 }
+
+/* Root Variables */
+:root {
+  --gold: rgba(255, 165, 0, 1);
+  --white: #fafafa;
+  --opaque-gold: rgba(255, 165, 0, 0.6);
+}
