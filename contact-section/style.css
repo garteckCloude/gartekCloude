@@ -190,6 +190,82 @@ a {
   background-color: transparent;
 }
 
+/* Header Section */
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 5rem;
+}
+
+.header-form {
+  flex: 1;
+}
+
+.header-form .form-row {
+  align-items: center;
+  flex: 1;
+}
+
+.header-form input {
+  order: 1;
+  box-sizing: initial;
+  height: 30px;
+  padding: 8px 12px;
+  flex: 1;
+}
+
+.header-form .btn {
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.header-form .btn:hover {
+  background-color: #ceb9b966;
+}
+
+.header-form-submit-btn-container .btn {
+}
+
+.menu-toggle-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle-btn {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+}
+
+.header .nav-list,
+.header-form {
+  display: none;
+}
+
+.header .nav-item a {
+  color: gray;
+  padding: 8px 12px;
+}
+
+.header a.join-wait-list-link {
+  color: var(--white);
+  background-color: var(--gold);
+  border-radius: 10px;
+  align-items: center;
+  gap: 12px;
+}
+
 /* Utility Classes */
 .hidden {
   display: none;
