@@ -422,6 +422,74 @@ a {
   font-size: 1.3rem;
 }
 
+/* Responsive Styles */
+@media (min-width: 425px) {
+  .footer-form {
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .footer-form input {
+    padding: 12px;
+  }
+
+  .footer-form-submit-btn {
+    padding: 16px 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-link-container {
+    width: 20%;
+  }
+
+  .menu-toggle-btn-container {
+    display: none;
+  }
+
+  .header .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 18px;
+  }
+
+  .main {
+    justify-content: center;
+  }
+
+  .message-form-container {
+    width: 70%;
+  }
+
+  .footer .nav-list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .nav-item a {
+    padding: 12px 18px;
+  }
+
+  .icon-container {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-form {
+    display: flex;
+  }
+
+  .icon-container {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 /* Utility Classes */
 .hidden {
   display: none;
