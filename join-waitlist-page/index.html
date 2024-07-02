@@ -9,5 +9,59 @@
 
     <script src="./main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- OFF SCREEN MOBILE MENU -->
+    <div class="off-screen-menu d-flex__col" data-menu-state="hidden">
+      <div class="btn-container">
+        <button
+          type="button"
+          class="btn close-off-screen-menu-btn icon-container"
+          data-menu-state="hidden"
+        >
+          <img src="../images/close-circle.png" alt="" class="img" />
+        </button>
+      </div>
+      <div class="container d-flex__col">
+        <div class="img-container d-flex__col">
+          <img src="../images/gartekcloude-white-2.svg" alt="" class="img" />
+        </div>
+        <nav class="off-screen-menu-nav nav">
+          <ul class="nav-list off-screen-menu-nav-list d-flex__col">
+            <li class="list-item">About</li>
+            <li class="list-item">FAQs</li>
+            <li class="list-item">Contact Us</li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="d-flex__col align-items__center justify-content__space-around flex_1"
+      >
+        <div class="join-waitlist-container d-flex__row">
+          <a href="#" class="join-waitlist-link-off-screen d-flex__col">
+            <span class="inner-container d-flex__col">
+              <span>
+                Join <br />
+                Waitlist
+              </span>
+              <span class="icon-container">
+                <img src="../images/arrow-right.svg" alt="" />
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="icon-group-container d-flex__row">
+          <a class="icon-container d-block" href="#">
+            <img src="../images/twitter.svg" alt="Twitter Icon" />
+          </a>
+          <a class="icon-container d-block" href="#">
+            <img src="../images/linkedin.svg" alt="LinkedIn Icon" />
+          </a>
+        </div>
+
+        <div class="copy-right-section-container d-flex__col">
+          <p class="copy-right-text">&copy; 2024 GartekCloude</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
