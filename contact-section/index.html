@@ -10,60 +10,125 @@
     <script src="./main.js" defer></script>
   </head>
   <body>
-    <!-- NAV BAR -->
-    <!-- <header class="header">
-        <nav class="nav">
-          <div>
-            <a href="#">
-              <div class="img-container logo-container">
-                <img src="./images/Frame 2147223419.png" alt="GartekCloude Logo" />
-              </div>
-              GartekCloude
-            </a>
-          </div>
-          <div class="menu-toggle-btn-container">
-            <button type="button" class="btn menu-toggle-btn icon-container">
-              <img src="./images/menu.svg" alt="Hamburger Menu" />
-            </button>
-          </div>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <form action="#">
-                <label>
-                  <button
-                    type="submit"
-                    class="icon-container search-icon-container"
-                  >
-                    <img src="./images/magnify.svg" alt="Search Icon" />
-                  </button>
-
-                  <input
-                    type="search"
-                    name="search"
-                    id="search"
-                    placeholder="search"
-                  />
-                </label>
-              </form>
-            </li>
-            <li class="nav-item">
-              <a href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a href="@">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="join-wait-list-link">
-                Join Waitlist
-                <span class="icon-container arrow-icon-container"> </span>
-              </a>
-            </li>
+    <!-- OFF SCREEN MOBILE MENU -->
+    <div class="off-screen-menu d-flex__col" data-menu-state="hidden">
+      <div class="btn-container">
+        <button
+          type="button"
+          class="btn close-off-screen-menu-btn icon-container"
+          data-menu-state="hidden"
+        >
+          <img src="../images/close-circle.png" alt="" class="img" />
+        </button>
+      </div>
+      <div class="container d-flex__col">
+        <div class="img-container d-flex__col">
+          <img src="../images/gartekcloude-white-2.svg" alt="" class="img" />
+        </div>
+        <nav class="off-screen-menu-nav nav">
+          <ul class="nav-list off-screen-menu-nav-list d-flex__col">
+            <li class="list-item">About</li>
+            <li class="list-item">FAQs</li>
+            <li class="list-item">Contact Us</li>
           </ul>
         </nav>
-      </header> -->
+      </div>
+      <div
+        class="d-flex__col align-items__center justify-content__space-around flex_1"
+      >
+        <div class="join-waitlist-container d-flex__row">
+          <a href="#" class="join-waitlist-link-off-screen d-flex__col">
+            <span class="inner-container d-flex__col">
+              <span>
+                Join <br />
+                Waitlist
+              </span>
+              <span class="icon-container">
+                <img src="../images/arrow-right.svg" alt="" />
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="icon-group-container d-flex__row">
+          <a class="icon-container d-block" href="#">
+            <img src="./images/twitter.svg" alt="Twitter Icon" />
+          </a>
+          <a class="icon-container d-block" href="#">
+            <img src="./images/linkedin.svg" alt="LinkedIn Icon" />
+          </a>
+        </div>
+
+        <div class="copy-right-section-container d-flex__col">
+          <p class="copy-right-text">&copy; 2024 GartekCloude</p>
+        </div>
+      </div>
+    </div>
+    <!-- NAV BAR -->
+    <header class="header">
+      <nav class="nav">
+        <div class="d-flex__col logo-link-container">
+          <a href="#" class="logo-link">
+            <img
+              src="../images/gartekcloude-gold.svg"
+              alt="GartekCloude Logo"
+            />
+          </a>
+        </div>
+        <div class="menu-toggle-btn-container">
+          <button
+            type="button"
+            class="btn menu-toggle-btn icon-container"
+            data-menu-state="hidden"
+          >
+            <img src="../images/menu.svg" alt="Hamburger Menu" />
+          </button>
+        </div>
+        <form action="#" class="header-form">
+          <div class="form-row d-flex__row">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="search"
+            />
+
+            <button
+              type="submit"
+              class="btn icon-container search-icon-container"
+            >
+              <img src="./images/magnify.svg" alt="Search Icon" />
+            </button>
+          </div>
+          <!--
+          <div class="form-row header-form-submit-btn-container">
+
+          </div> -->
+        </form>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="../join-waitlist/index.html"
+              class="join-wait-list-link d-flex__row"
+            >
+              <span> Join Waitlist </span>
+
+              <span class="icon-container arrow-icon-container">
+                <img src="./images/chevron-right.svg" alt="" class="img" />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- BODY -->
     <main class="main">
       <section>
