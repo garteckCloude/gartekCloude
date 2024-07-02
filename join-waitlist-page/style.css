@@ -342,6 +342,86 @@ a {
 
 /* MAIN SECTION STYLES END */
 
+/* Footer Section */
+.footer {
+  background-color: var(--gold);
+  color: var(--white);
+}
+
+.footer .generic-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section-container {
+  align-items: center;
+  color: var(--white);
+  max-width: 500px;
+  margin: 30px 18px 18px 18px;
+  gap: 18px;
+}
+
+.footer__title {
+  text-align: center;
+}
+
+.footer-form {
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  padding: 18px 8px;
+  border-radius: 8px;
+}
+
+.footer-form-submit-btn {
+  cursor: pointer;
+  background-color: var(--gold);
+  color: var(--white);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding: 12px 24px;
+}
+
+.nav__footer {
+  margin: 30px;
+}
+
+.footer .nav-list {
+  gap: 40px;
+  align-items: center;
+  list-style: none;
+}
+
+.footer .nav-item {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.footer .icon-group-container {
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 30px;
+}
+
+.footer .icon-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  padding: 16px;
+}
+
+.copy-right-section-container {
+  gap: 20px;
+}
+
+.copy-right-text {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
 /* Utility Classes */
 .hidden {
   display: none;
