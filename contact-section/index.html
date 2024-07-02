@@ -130,30 +130,31 @@
       </nav>
     </header>
     <!-- BODY -->
-    <main class="main">
-      <section>
-        <h1 class="main-title">Send Us a Message</h1>
-        <p>
-          You can reach out to us via our official email <br />
-          <a href="#" class="title-mail-link">gartekcloude@gmail.com</a>
-        </p>
+    <main class="main d-flex__row">
+      <section class="d-flex__col message-form-container">
+        <div class="section-title-container">
+          <h1 class="main-title">Send Us a Message</h1>
+          <p>
+            You can reach out to us via our official email <br />
+            <a href="#" class="title-mail-link">gartekcloude@gmail.com</a>
+          </p>
+        </div>
 
-        <form action="#" class="message-form">
-          <div class="form-row">
-            <label for="first-name"
+        <form action="#" class="message-form d-flex__col">
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="first-name"
               >First Name <span class="asterik">*</span></label
             >
             <input
               type="text"
               name="first-name"
               id="first-name"
+              required
               placeholder="Enter your first name"
             />
           </div>
-          <div class="form-row">
-            <label for="last-name"
-              >Last Name <span class="asterik">*</span></label
-            >
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="last-name">Last Name</label>
             <input
               type="text"
               name="last-name"
@@ -161,26 +162,30 @@
               placeholder="Enter your last name"
             />
           </div>
-          <div class="form-row">
-            <label for="email-address"
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="email-address"
               >Email Address <span class="asterik">*</span></label
             >
             <input
               type="email"
               name="email-address"
               id="email-address"
+              required
               placeholder="Enter a verified Email Address"
             />
           </div>
-          <div class="form-row">
-            <label for="comment">Comment <span class="asterik">*</span></label>
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="comment">Comment</label>
             <textarea
               name="comment"
               id="comment"
               placeholder="Type a message"
+              cols="30"
+              rows="6"
+              class="message-form-comment"
             ></textarea>
           </div>
-          <div class="form-row submit-btn-container">
+          <div class="form-row d-flex__col submit-btn-container">
             <button class="btn message-form-submit-btn" type="submit">
               Send Message
             </button>
