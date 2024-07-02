@@ -1,5 +1,4 @@
-// import Hero from "./component/Hero/Hero";
-
+import Hero from "./component/Hero/Hero";
 import Faq from "./component/Faq/Faq";
 import FifthSection from "./component/FifthSection/FifthSection";
 import Footer from "./component/Footer/Footer";
@@ -11,7 +10,7 @@ import Thirdsection from "./component/Thirdsection/Thirdsection";
 export default function App() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <HeroBanner />
       <Thirdsection />
       <ForthSection />
