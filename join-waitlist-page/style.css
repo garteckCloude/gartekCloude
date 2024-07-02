@@ -47,3 +47,57 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.icon-container {
+  box-sizing: initial;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.padding_16 {
+  padding: 16px;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items__center {
+  align-items: center;
+}
+
+.justify-content__center {
+  justify-content: center;
+}
+
+.justify-content__space-around {
+  justify-content: space-around;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
