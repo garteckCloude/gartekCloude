@@ -18,3 +18,86 @@ html {
   --white: #fafafa;
   --opaque-gold: rgba(255, 165, 0, 0.6);
 }
+
+/* Base Styles */
+body {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5rem;
+}
+
+img,
+.img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-container {
+  box-sizing: initial;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.padding_16 {
+  padding: 16px;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items__center {
+  align-items: center;
+}
+
+.justify-content__center {
+  justify-content: center;
+}
+
+.justify-content__space-around {
+  justify-content: space-around;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
