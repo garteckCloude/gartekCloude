@@ -97,6 +97,99 @@ a {
   flex: 1;
 }
 
+/* Off-Screen Menu */
+.off-screen-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--gold);
+  color: var(--white);
+  overflow-x: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.off-screen-menu[data-menu-state='hidden'] {
+  width: 0;
+}
+
+.off-screen-menu[data-menu-state='visible'] {
+  width: 100%;
+}
+
+.off-screen-menu-nav {
+}
+
+.off-screen-menu-nav-list {
+  gap: 3rem;
+}
+
+.off-screen-menu .container {
+  width: 50%;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.off-screen-menu .list-item {
+}
+
+.off-screen-menu .icon-group-container {
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 30px;
+}
+
+.off-screen-menu .icon-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.off-screen-menu .btn-container {
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+.off-screen-menu .close-off-screen-menu-btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+}
+
+.join-waitlist-container {
+  justify-content: center;
+}
+
+.inner-container {
+  padding: 1rem;
+  border-radius: 50%;
+  height: 138px;
+  width: 138px;
+  background-color: #5e48db;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.join-waitlist-link-off-screen {
+}
+
+.join-waitlist-link-off-screen .icon-container {
+  padding: 0;
+  background-color: transparent;
+}
+
 /* Utility Classes */
 .hidden {
   display: none;
