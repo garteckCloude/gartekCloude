@@ -18,5 +18,5 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::post('/waiting-list', 'WaitingListController@store');
 
     // name email message
-    Route::post('/contact-us', );
+    Route::post('/contact-us', 'ContactUsController@store');
 });
