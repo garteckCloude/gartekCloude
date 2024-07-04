@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="../images/gartekcloud.svg">
+
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <!-- OFF SCREEN MOBILE MENU -->
+    <div class="off-screen-menu d-flex__col" data-menu-state="hidden">
+      <div class="btn-container">
+        <button
+          type="button"
+          class="btn close-off-screen-menu-btn icon-container"
+          data-menu-state="hidden"
+        >
+          <img src="../images/close-circle.png" alt="" class="img" />
+        </button>
+      </div>
+      <div class="container d-flex__col">
+        <div class="img-container d-flex__col">
+          <img src="../images/gartekcloude-white-2.svg" alt="" class="img" />
+        </div>
+        <nav class="off-screen-menu-nav nav">
+          <ul class="nav-list off-screen-menu-nav-list d-flex__col">
+            <li class="list-item">About</li>
+            <li class="list-item">FAQs</li>
+            <li class="list-item">Contact Us</li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="d-flex__col align-items__center justify-content__space-around flex_1"
+      >
+        <div class="join-waitlist-container d-flex__row">
+          <a href="#" class="join-waitlist-link-off-screen d-flex__col">
+            <span class="inner-container d-flex__col">
+              <span>
+                Join <br />
+                Waitlist
+              </span>
+              <span class="icon-container">
+                <img src="../images/arrow-right.svg" alt="" />
+              </span>
+            </span>
+          </a>
+        </div>
+
+        
+        <div class="icon-group-container d-flex__row">
+          <a class="icon-container d-block" href="#">
+            <img src="../images/twitter.svg" alt="Twitter Icon" />
+          </a>
+          <a class="icon-container d-block" href="#">
+            <img src="../images/linkedin.svg" alt="LinkedIn Icon" />
+          </a>
+        </div>
+
+        <div class="copy-right-section-container d-flex__col">
+          <p class="copy-right-text">&copy; 2024 GartekCloude</p>
+        </div>
+      </div>
+    </div>
+    <!-- NAV BAR -->
+    <header class="header">
+      <nav class="nav">
+        <div class="d-flex__col logo-link-container">
+          <a href="#" class="logo-link">
+            <img
+              src="../images/gartekcloude-gold.svg"
+              alt="GartekCloude Logo"
+            />
+          </a>
+        </div>
+        <div class="menu-toggle-btn-container">
+          <button
+            type="button"
+            class="btn menu-toggle-btn icon-container"
+            data-menu-state="hidden"
+          >
+            <img src="../images/menu.svg" alt="Hamburger Menu" />
+          </button>
+        </div>
+        <form action="#" class="header-form">
+          <div class="form-row d-flex__row">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="search"
+            />
+
+            <button
+              type="submit"
+              class="btn icon-container search-icon-container"
+            >
+              <img src="../images/magnify.svg" alt="Search Icon" />
+            </button>
+          </div>
+          <!--
+          <div class="form-row header-form-submit-btn-container">
+
+          </div> -->
+        </form>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="../join-waitlist/index.html"
+              class="join-wait-list-link d-flex__row"
+            >
+              <span> Join Waitlist </span>
+
+              <span class="icon-container arrow-icon-container">
+                <img src="../images/chevron-right.svg" alt="" class="img" />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- BODY -->
+    <main class="main d-flex__row">
+      <section class="d-flex__col message-form-container">
+        <div class="section-title-container">
+          <h1 class="main-title">Send Us a Message</h1>
+          <p>
+            You can reach out to us via our official email <br />
+            <a href="#" class="title-mail-link">gartekcloude@gmail.com</a>
+          </p>
+        </div>
+
+        <form action="#" class="message-form d-flex__col">
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="first-name"
+              >First Name <span class="asterik">*</span></label
+            >
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              required
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Enter your last name"
+            />
+          </div>
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="email-address"
+              >Email Address <span class="asterik">*</span></label
+            >
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              required
+              placeholder="Enter a verified Email Address"
+            />
+          </div>
+          <div class="form-row d-flex__col">
+            <label class="form-element-label" for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Type a message"
+              cols="30"
+              rows="6"
+              class="message-form-comment"
+            ></textarea>
+          </div>
+          <div class="form-row d-flex__col submit-btn-container">
+            <button class="btn message-form-submit-btn" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="generic-container d-flex__col">
+        <section class="footer-section-container d-flex__col">
+          <h1 class="footer__title">
+            Be the first to know what happens at gartekcloude! Subscribe Now
+          </h1>
+
+          <form action="#" class="footer-form d-flex__col">
+            <div class="form-row">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-row footer-form-submit-btn-container">
+              <button type="submit" class="btn footer-form-submit-btn">
+                Send
+              </button>
+            </div>
+          </form>
+
+          <nav class="nav nav__footer">
+            <ul class="nav-list d-flex__col">
+              <li class="nav-item">
+                <a href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a href="#"> Contact Us </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="icon-group-container d-flex__row">
+            <a class="icon-container d-block" href="#">
+              <img src="../images/twitter.svg" alt="Twitter Icon" />
+            </a>
+            <a class="icon-container d-block" href="#">
+              <img src="../images/linkedin.svg" alt="LinkedIn Icon" />
+            </a>
+          </div>
+
+          <div class="copy-right-section-container d-flex__col">
+            <div class="img-container">
+              <!-- gartekcloude image -->
+              <img src="../images/Frame 5.png" alt="" class="img" />
+            </div>
+            <p class="copy-right-text">&copy; 2024 GartekCloude</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
