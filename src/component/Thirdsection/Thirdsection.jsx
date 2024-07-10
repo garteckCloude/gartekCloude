@@ -1,3 +1,6 @@
+import { Button, Link} from "@nextui-org/react";
+
+
 export default function Thirdsection() {
   return (
     <section>
@@ -12,7 +15,7 @@ export default function Thirdsection() {
                 <p>create connections & build Communities with Gartekcloude</p>
             </div>
             <div className="flex justify-center items-center mt-5">
-                <button className="bg-[#FFA500] py-1 px-5 rounded-lg text-white">join waitlist now!</button>
+                <Button as={Link} href="/waitlist" className="bg-[#FFA500] h-10 w-52 rounded-lg text-white">join waitlist now!</Button>
             </div>
         </div>
         <div>

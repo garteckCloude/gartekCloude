@@ -4,10 +4,10 @@ import ThirdInfinityScroll from "../InfinityScroll/ThirdInfinityScroll";
 
 export default function HeroBanner() {
   return (
-    <div className="relative ">
+    <div className="relative overflow-hidden">
       {/* Content above InfinityScroll */}
       <div className="flex gap-32 flex-col bg-[#FFA500] sm:flex-row z-0 relative">
-        <div className="ml-6 sm:block w-96">
+        <div className="ml-40 pt-14 sm:block w-96">
           <p className="text-white text-6xl font-bold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">Access</p>
           <p className="text-white text-6xl font-bold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">Learn</p>
           <p className="font-bold text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-indigo-900">Connect</p>

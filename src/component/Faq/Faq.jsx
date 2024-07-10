@@ -3,7 +3,7 @@ import FaqComponent from "./FaqComponent";
 export default function Faq() {
   return (
     <section>
-        <div className="flex flex-col md:gap-96 mt-10 gap-20 md:flex-row w-full lg:overflow-hidden">
+        <div className="flex flex-col md:gap-96 mt-10 gap-20 md:flex-row w-full overflow-hidden">
             <div className="md:ml-40">
                 <h1 className="font-bold text-3xl md:text-5xl pl-5">Frequently <br /> <span className="text-[#FFA500] md:text-black">Ask Questions</span></h1>
             </div>
