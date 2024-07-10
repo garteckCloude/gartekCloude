@@ -15,7 +15,7 @@ export default function Footer() {
             <div className=" flex flex-col items-center justify-center pt-10">
                 <label className="input max-w-96 input-bordered px-7 rounded-lg flex bg-white items-center gap-2">
                     <input type="text" className="grow w-[442px] focus:outline-none h-[65px]" placeholder={`Search for gartekgcloud`} />
-                    <button type="button" className="px-5 py-1 w-[90px] h-[40px] text-white rounded-lg bg-[#FFA500] opacity-70">Send</button>
+                    <button type="button" className="px-5 py-1 w-[90px] h-[40px] text-white rounded-lg bg-[#FFA500] opacity-70"><a href="../../../frontend/" target="_blank" rel="noopener noreferrer">Send</a></button>
                 </label>
             </div>
           <div className="mt-5 text-white">

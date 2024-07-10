@@ -4,7 +4,7 @@ import ThirdInfinityScroll from "../InfinityScroll/ThirdInfinityScroll";
 
 export default function HeroBanner() {
   return (
-    <div className="relative ">
+    <div className="relative overflow-hidden">
       {/* Content above InfinityScroll */}
       <div className="flex gap-32 flex-col bg-[#FFA500] sm:flex-row z-0 relative">
         <div className="ml-40 pt-14 sm:block w-96">
