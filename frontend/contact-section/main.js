@@ -11,7 +11,7 @@ const emailRegExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 // Adding input validation for the first name field
-messageFirstNameElement.addEventListener('input', (e) => {
+messageFirstNameElement.addEventListener('input', () => {
   let value = messageFirstNameElement.value;
 
   if (value.trim() === '') {
@@ -23,8 +23,21 @@ messageFirstNameElement.addEventListener('input', (e) => {
   messageFirstNameElement.reportValidity();
 });
 
+// Adding input validation for the last name field
+messageLastNameElement.addEventListener('input', () => {
+  const { value } = messageFirstNameElement;
+
+  if (value.trim() === '') {
+    messageLastNameElement.setCustomValidity('Please input your last name');
+  } else {
+    messageLastNameElement.setCustomValidity('');
+  }
+
+  messageLastNameElement.reportValidity();
+});
+
 // Adding input validation for the email address field
-messageFormEmailAddress.addEventListener('input', (e) => {
+messageFormEmailAddress.addEventListener('input', () => {
   let value = messageFormEmailAddress.value;
 
   if (value.trim() === '' || !emailRegExp.test(value.trim())) {
@@ -47,6 +60,14 @@ messageForm.addEventListener('submit', (e) => {
   if (firstName.value.trim() === '') {
     firstName.setCustomValidity('Please input your first name');
     firstName.reportValidity();
+    return;
+  }
+
+  const lastName = messageForm.elements['last-name'];
+
+  if (lastName.value.trim() === '') {
+    lastName.setCustomValidity('Please input your last name');
+    lastName.reportValidity();
     return;
   }
 
