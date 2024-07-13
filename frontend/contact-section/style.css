@@ -302,6 +302,10 @@ textarea {
   font-size: 1.7rem;
 }
 
+.form-row input:user-invalid {
+  outline: 2px solid red;
+}
+
 .form-row input:focus,
 .form-row input:active,
 .form-row textarea:focus,
