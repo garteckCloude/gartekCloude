@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Form() {
   return (
-    <div className="flex w-[80%] lg:w-[40%] bg-slate-100 mx-auto flex-col gap-4 shadow-gray-300 shadow-xl px-5 py-3">
+    <div className="flex rounded-sm w-[80%] bg-opacity-40 lg:w-[40%] bg-slate-100 mx-auto flex-col gap-4 shadow-gray-300 shadow-sm px-5 py-3">
       <div>
       <label>First Name</label>
         <Input type="email" className="border border-gray-600 outline-none rounded-md mt-5" placeholder="Enter your email" />
