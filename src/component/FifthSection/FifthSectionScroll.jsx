@@ -30,10 +30,12 @@ export default function FifthSectionScroll() {
 
     return (
         <section>
-            <div className="w-full overflow-hidden bg-black gap-10 hidden md:flex md:flex-col">
+            <div className="w-full bg-black gap-10 hidden md:flex md:flex-col">
                 <Slider {...settings} className="mt-10 ">
                     <div className="border-4 border-white h-44 gap-96 rounded-lg">
-                        <div></div>
+                        <div>
+                            <img src="" alt="" srcset="" />
+                        </div>
                         <div className="text-white py-5 px-5 h-full">
                             <div className="mb-5">
                                 <h2 className="text-2xl font-bold">Centralized Course Materials</h2>
@@ -55,8 +57,7 @@ export default function FifthSectionScroll() {
                             </div>
                             <div>
                                 <p>
-                                    Our platform provides personalized study plans and recommendations,
-                                    helping students optimize their learning based on their individual progress and needs.
+                                    Our platform provides personalized study plans and recommendations, helping students optimize their learning based on their individual progress and needs.
                                 </p>
                             </div>
                         </div>

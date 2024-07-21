@@ -9,7 +9,7 @@ import {
 
 export default function FaqComponent() {
   return (
-    <section>
+    <section className="container">
         <Accordion type="single" collapsible>
           <AccordionItem className="w-96" value="item-1">
               <AccordionTrigger>Is it accessible?</AccordionTrigger>
