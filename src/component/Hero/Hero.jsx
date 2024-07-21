@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section>
         <div className="mb-10">
-          <div>
+          <div className="container">
             <img src="HeroBanner.png" alt="" srcset="" />
           </div>
           <div className="flex flex-col items-center justify-center -mt-4 sm:-mt-16 md:-mt-36 xl:-mt-40">
