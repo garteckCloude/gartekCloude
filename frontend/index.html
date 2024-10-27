@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GartekCloude</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="./images/gartekcloud.svg" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <!-- TODO:
+      1. Include Infinite scroll section
+      2. Add hero image for mobile and desktop devices
+      3. Rename Images and Remove unused images and icons
+      4. Fix unused styles in all stylesheets
+      5. Comment code properly
+      6. Bring build closer to UI specs
+    -->
+    <!-- OFF SCREEN MOBILE MENU -->
+    <div class="off-screen-menu d-flex__col" data-menu-state="hidden">
+      <div class="btn-container">
+        <button
+          type="button"
+          class="btn close-off-screen-menu-btn icon-container"
+          data-menu-state="hidden"
+        >
+          <img src="./images/close-circle.png" alt="" class="img" />
+        </button>
+      </div>
+      <div class="container d-flex__col">
+        <div class="img-container d-flex__col">
+          <img src="./images/gartekcloude-white-2.svg" alt="" class="img" />
+        </div>
+        <nav class="off-screen-menu-nav nav">
+          <ul class="nav-list off-screen-menu-nav-list d-flex__col">
+            <li class="list-item">About</li>
+            <li class="list-item">FAQs</li>
+            <li class="list-item">
+              <a href="./contact-section/index.html#send-us-a-message">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="d-flex__col align-items__center justify-content__space-around flex_1"
+      >
+        <div class="join-waitlist-container d-flex__row">
+          <a
+            href="#join-wait-list"
+            class="join-waitlist-link-off-screen d-flex__col"
+          >
+            <span class="inner-container d-flex__col">
+              <span>
+                Join <br />
+                Waitlist
+              </span>
+              <span class="icon-container">
+                <img src="./images/arrow-right.svg" alt="" />
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="icon-group-container d-flex__row">
+          <a
+            class="icon-container d-block"
+            href="https://x.com/gartekcloude?t=7x-qcXQUdoMhWaFsdTEqQQ&s=09"
+          >
+            <img src="./images/twitter.svg" alt="Twitter Icon" />
+          </a>
+          <a
+            class="icon-container d-block"
+            href="https://www.linkedin.com/company/gartekcloudehq/"
+          >
+            <img src="./images/linkedin.svg" alt="LinkedIn Icon" />
+          </a>
+        </div>
+
+        <div class="copy-right-section-container d-flex__col">
+          <p class="copy-right-text">&copy; 2024 GartekCloude</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV BAR -->
+    <header class="header">
+      <nav class="nav">
+        <div class="d-flex__col logo-link-container">
+          <a href="#" class="logo-link">
+            <img src="./images/gartekcloude-gold.svg" alt="GartekCloude Logo" />
+          </a>
+        </div>
+        <div class="menu-toggle-btn-container">
+          <button
+            type="button"
+            class="btn menu-toggle-btn icon-container icon-container-medium"
+            data-menu-state="hidden"
+          >
+            <img src="./images/menu.svg" alt="Hamburger Menu" />
+          </button>
+        </div>
+        <form action="#" class="header-form">
+          <div class="form-row d-flex__row">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="search"
+            />
+
+            <button
+              type="submit"
+              class="btn icon-container search-icon-container"
+            >
+              <img src="./images/magnify.svg" alt="Search Icon" />
+            </button>
+          </div>
+          <!--
+              <div class="form-row header-form-submit-btn-container">
+
+              </div> -->
+        </form>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact-section//index.html#send-us-a-message"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#join-wait-list" class="join-wait-list-link d-flex__row">
+              <span> Join Waitlist </span>
+
+              <span class="icon-container arrow-icon-container">
+                <img src="./images/chevron-right.svg" alt="" class="img" />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BODY -->
+    <main class="main d-flex__col">
+      <!-- HERO SECTION -->
+      <section class="hero-section d-flex__col gap__1">
+        <!-- <div class="hero-img-container">
+          <img src="./images/HeroBanner.png" alt="" />
+        </div> -->
+        <div class="d-flex__col align-items__center gap__2">
+          <div
+            class="d-flex__col align-items__center hero-text text-align__center"
+          >
+            <p>
+              Join thousands of students transforming their study experience
+              with seamless access to organized materials and powerful media
+              integration on Gartekcloude!
+            </p>
+          </div>
+          <div className="flex justify-center items-center mt-5">
+            <a
+              href="./join-waitlist-page/index.html"
+              class="d-flex__row justify-content__space-around join-wait-list-link align-items__center"
+            >
+              <span>Join Waitlist Now!</span>
+              <span class="icon-container">
+                <img src="./images/Vector.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- HERO SECTION ENDS -->
+
+      <!-- SUB SECTION -->
+      <section class="sub-section">
+        <div class="img-container">
+          <img src="./images/Group 1171275277.png" class="img" />
+        </div>
+      </section>
+      <!-- SUB SECTION ENDS -->
+
+      <!-- SECTION 2 -->
+      <section class="section-2 d-flex__col justify-content__center">
+        <div class="text-block d-flex__row align-items__center img-container">
+          <picture>
+            <source
+              srcset="./images/access-learn-connect-medium.png"
+              media="(min-width: 768px)"
+            />
+            <img src="./images/Frame 2147223444.png" alt="" />
+          </picture>
+        </div>
+        <div class="img-container phone-img">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/phone-img-med.png"
+            />
+            <img src="./images/Group 1171275270.png" alt="" />
+          </picture>
+        </div>
+      </section>
+      <!-- SECTION 2 ENDS -->
+
+      <!-- SECTION 4 -->
+      <section class="section-4 d-flex__col">
+        <div class="d-flex__col align-items__center">
+          <h2 class="text-align__center">
+            We Are <span class="fancy-text">Revolutionizing</span><br />
+            The <span class="fancy-text">EdTech</span> System!
+          </h2>
+          <div class="d-flex__col gap__2 align-items__center">
+            <div class="d-flex__col align-items__center">
+              <p>
+                Collaborate, Access Comprehensive &amp; Organized Course
+                Materials,
+              </p>
+              <p>
+                Create Connections &amp; Build Communities With GartekCloude
+              </p>
+            </div>
+            <div className="">
+              <a
+                href="./join-waitlist-page/index.html"
+                class="d-flex__row join-wait-list-link align-items__center"
+              >
+                <span>Join Waitlist Now!</span>
+                <span class="icon-container vector-img">
+                  <img src="./images/Vector.svg" alt="" />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 4 ENDS -->
+
+      <!-- SECTION  5 -->
+      <section class="section-5">
+        <div class="img-container">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/img-about.png"
+            />
+            <img src="./images/Frame 2147223656.png" alt="" />
+          </picture>
+        </div>
+        <div class="img-container interface-img">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/interface-medium.png"
+            />
+            <img src="./images/Frame 2147223599.png" alt="" />
+          </picture>
+        </div>
+      </section>
+      <!-- SECTION 5 ENDS -->
+
+      <!-- SECTION 6 -->
+      <section class="section-6">
+        <header
+          class="d-flex__row justify-content__space-between section-6-header align-items__center"
+        >
+          <h2>
+            Why<br />
+            <span class="fancy-text">GartekCloude?</span>
+          </h2>
+          <a href="#join-wait-list" class="join-waitlist-link d-flex__col">
+            <span class="sub-container d-flex__col">
+              <span>
+                Join <br />
+                Waitlist
+              </span>
+              <span class="icon-container">
+                <img src="./images/arrow-right.svg" alt="" />
+              </span>
+            </span>
+          </a>
+        </header>
+
+        <div class="infinite-scroll features-infinite-scroll">
+          <div class="features primary-features d-flex__col gap__3">
+            <div class="feature d-flex__col gap__2">
+              <header class="feature-header">
+                <span
+                  class="sub-container d-flex__col justify-content__center align-items__center"
+                >
+                  <span class="icon-container icon-container-large">
+                    <img src="./images/book.svg" alt="" />
+                  </span>
+                </span>
+              </header>
+              <div class="feature-content">
+                <h3>Centralized Course Materials</h3>
+                <p class="text">
+                  Gartekcloude offers a well-organized repository of course
+                  materials for all academic levels and fields of study,
+                  ensuring students can easily find and access what they need.
+                </p>
+              </div>
+            </div>
+            <div class="feature d-flex__col gap__2">
+              <header class="feature-header">
+                <span
+                  class="sub-container d-flex__col justify-content__center align-items__center"
+                >
+                  <span class="icon-container icon-container-large">
+                    <img src="./images/book.svg" alt="" />
+                  </span>
+                </span>
+              </header>
+              <div class="feature-content">
+                <h3>Centralized Course Materials</h3>
+                <p class="text">
+                  Gartekcloude offers a well-organized repository of course
+                  materials for all academic levels and fields of study,
+                  ensuring students can easily find and access what they need.
+                </p>
+              </div>
+            </div>
+            <div class="feature d-flex__col gap__2">
+              <header class="feature-header">
+                <span
+                  class="sub-container d-flex__col justify-content__center align-items__center"
+                >
+                  <span class="icon-container icon-container-large">
+                    <img src="./images/book.svg" alt="" />
+                  </span>
+                </span>
+              </header>
+              <div class="feature-content">
+                <h3>Centralized Course Materials</h3>
+                <p class="text">
+                  Gartekcloude offers a well-organized repository of course
+                  materials for all academic levels and fields of study,
+                  ensuring students can easily find and access what they need.
+                </p>
+              </div>
+            </div>
+            <div class="feature d-flex__col gap__2">
+              <header class="feature-header">
+                <span
+                  class="sub-container d-flex__col justify-content__center align-items__center"
+                >
+                  <span class="icon-container icon-container-large">
+                    <img src="./images/book.svg" alt="" />
+                  </span>
+                </span>
+              </header>
+              <div class="feature-content">
+                <h3>Centralized Course Materials</h3>
+                <p class="text">
+                  Gartekcloude offers a well-organized repository of course
+                  materials for all academic levels and fields of study,
+                  ensuring students can easily find and access what they need.
+                </p>
+              </div>
+            </div>
+            <div class="feature d-flex__col gap__2">
+              <header class="feature-header">
+                <span
+                  class="sub-container d-flex__col justify-content__center align-items__center"
+                >
+                  <span class="icon-container icon-container-large">
+                    <img src="./images/book.svg" alt="" />
+                  </span>
+                </span>
+              </header>
+              <div class="feature-content">
+                <h3>Centralized Course Materials</h3>
+                <p class="text">
+                  Gartekcloude offers a well-organized repository of course
+                  materials for all academic levels and fields of study,
+                  ensuring students can easily find and access what they need.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile-join-wait-list-container d-flex__col align-items__center"
+        >
+          <a
+            href="#join-wait-list"
+            class="join-waitlist-link d-flex__col align-items__center justify-content__center text-align__center"
+          >
+            <span class="sub-container d-flex__col align-items__center">
+              <span>
+                Join <br />
+                Waitlist
+              </span>
+              <span class="icon-container icon-container-medium">
+                <img src="./images/arrow-right.svg" alt="" />
+              </span>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- SECTION 6 ENDS -->
+
+      <!-- SECTION 7 -->
+      <section class="section-7">
+        <article>
+          <div class="img-container">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/join-us-medium.png"
+              />
+              <img src="./images/Frame 2147223532.png" alt="" class="img" />
+            </picture>
+          </div>
+        </article>
+      </section>
+      <!-- SECTION 7 ENDS -->
+
+      <!-- FAQ SECTION -->
+      <section class="faq-section d-flex__col gap__3">
+        <header>
+          <h2>
+            <span class="fancy-text">Frequently</span><br />
+            <span class="fancy-text">Asked Questions ?</span>
+          </h2>
+        </header>
+        <div class="faqs-container">
+          <div class="accordion-container d-flex__col">
+            <div class="d-flex__col accordion">
+              <div
+                class="accordion-label align-items__center d-flex__row justify-content__space-between"
+              >
+                <span class="title">
+                  How does Gartekcloude improve learning?</span
+                >
+                <span class="icon-container">
+                  <img
+                    src="./images/arrow-down.svg"
+                    class="arrow-down"
+                    alt=""
+                  />
+                  <img src="./images/arrow-up.svg" alt="" class="arrow-up" />
+                </span>
+              </div>
+              <div class="accordion-content">
+                Gartecloude offers comprehensive materials, personalized study
+                plans, Advanced-powered tools, and a supportive community for
+                enhanced learning.
+              </div>
+            </div>
+
+            <div class="d-flex__col accordion">
+              <div
+                class="accordion-label align-items__center d-flex__row justify-content__space-between"
+              >
+                <span class="title">
+                  How does Gartekcloude improve learning?</span
+                >
+                <span class="icon-container">
+                  <img
+                    src="./images/arrow-down.svg"
+                    class="arrow-down"
+                    alt=""
+                  />
+                  <img src="./images/arrow-up.svg" alt="" class="arrow-up" />
+                </span>
+              </div>
+              <div class="accordion-content">
+                Gartecloude offers comprehensive materials, personalized study
+                plans, Advanced-powered tools, and a supportive community for
+                enhanced learning.
+              </div>
+            </div>
+
+            <div class="d-flex__col accordion">
+              <div
+                class="accordion-label align-items__center d-flex__row justify-content__space-between"
+              >
+                <span class="title">
+                  How does Gartekcloude improve learning?</span
+                >
+                <span class="icon-container">
+                  <img
+                    src="./images/arrow-down.svg"
+                    class="arrow-down"
+                    alt=""
+                  />
+                  <img src="./images/arrow-up.svg" alt="" class="arrow-up" />
+                </span>
+              </div>
+              <div class="accordion-content">
+                Gartecloude offers comprehensive materials, personalized study
+                plans, Advanced-powered tools, and a supportive community for
+                enhanced learning.
+              </div>
+            </div>
+
+            <div class="d-flex__col accordion">
+              <div
+                class="accordion-label align-items__center d-flex__row justify-content__space-between"
+              >
+                <span class="title">
+                  How does Gartekcloude improve learning?</span
+                >
+                <span class="icon-container">
+                  <img
+                    src="./images/arrow-down.svg"
+                    class="arrow-down"
+                    alt=""
+                  />
+                  <img src="./images/arrow-up.svg" alt="" class="arrow-up" />
+                </span>
+              </div>
+              <div class="accordion-content">
+                Gartecloude offers comprehensive materials, personalized study
+                plans, Advanced-powered tools, and a supportive community for
+                enhanced learning.
+              </div>
+            </div>
+
+            <div class="d-flex__col accordion">
+              <div
+                class="accordion-label align-items__center d-flex__row justify-content__space-between"
+              >
+                <span class="title">
+                  How does Gartekcloude improve learning?</span
+                >
+                <span class="icon-container">
+                  <img
+                    src="./images/arrow-down.svg"
+                    class="arrow-down"
+                    alt=""
+                  />
+                  <img src="./images/arrow-up.svg" alt="" class="arrow-up" />
+                </span>
+              </div>
+              <div class="accordion-content">
+                Gartecloude offers comprehensive materials, personalized study
+                plans, Advanced-powered tools, and a supportive community for
+                enhanced learning.
+              </div>
+            </div>
+
+            <div class="d-flex__col accordion">
+              <div
+                class="accordion-label align-items__center d-flex__row justify-content__space-between"
+              >
+                <span class="title">
+                  How does Gartekcloude improve learning?</span
+                >
+                <span class="icon-container">
+                  <img
+                    src="./images/arrow-down.svg"
+                    class="arrow-down"
+                    alt=""
+                  />
+                  <img src="./images/arrow-up.svg" alt="" class="arrow-up" />
+                </span>
+              </div>
+              <div class="accordion-content">
+                Gartecloude offers comprehensive materials, personalized study
+                plans, Advanced-powered tools, and a supportive community for
+                enhanced learning.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ SECTION ENDS -->
+
+      <!-- SECTION 9 -->
+      <section class="section-9 d-flex__col gap__1 align-items__center">
+        <header>
+          <h2 class="text-align__center">
+            Have More Questions<br />
+            <span class="fancy-text">Kindly Send us a Message</span>
+          </h2>
+        </header>
+        <div>
+          <a href="./contact-section/index.html">Contact Us</a>
+        </div>
+      </section>
+      <!-- SECTION 9 ENDS -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="generic-container d-flex__col">
+        <section class="footer-section-container d-flex__col">
+          <h1 class="footer__title">
+            Be the first to know what happens at gartekcloude! Subscribe Now
+          </h1>
+
+          <form action="#" class="footer-form d-flex__row align-items__center">
+            <div class="form-row">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-row footer-form-submit-btn-container">
+              <button type="submit" class="btn footer-form-submit-btn">
+                Send
+              </button>
+            </div>
+          </form>
+
+          <nav class="nav nav__footer">
+            <ul class="nav-list d-flex__col">
+              <li class="nav-item">
+                <a href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contact-section/index.html#send-us-a-message">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="icon-group-container d-flex__row">
+            <a
+              class="icon-container"
+              href="https://x.com/gartekcloude?t=7x-qcXQUdoMhWaFsdTEqQQ&s=09"
+            >
+              <img src="./images/twitter.svg" alt="Twitter Icon" />
+            </a>
+            <a
+              class="icon-container"
+              href="https://www.linkedin.com/company/gartekcloudehq/"
+            >
+              <img src="./images/linkedin.svg" alt="LinkedIn Icon" />
+            </a>
+          </div>
+
+          <div class="copy-right-section-container d-flex__col">
+            <div class="img-container">
+              <!-- gartekcloude image -->
+              <img src="./images/Frame 5.png" alt="" class="img" />
+            </div>
+            <p class="copy-right-text">&copy; 2024 GartekCloude</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
